@@ -1,11 +1,11 @@
 
-title: Karna
-desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
-url: https://nju-itxia.github.io/gallery/
+title: ITXIA GALLERY
+desctiption: 
+url: https://nju-itxia.github.io/
+baseurl: "/gallery"
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/karna"
 
 
 sass:
@@ -40,4 +40,4 @@ api-token:
 include: [_pages]
 version: 0.8
 
-gems: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag]
