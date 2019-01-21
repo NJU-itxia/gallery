@@ -1,5 +1,6 @@
 # 212121 1976d2 7e57c2 006064
 # 9e9d24 bf360c 00897b 03a9f4
+# fffd94 a8c4dd 79ec85
 - img: 1.jpg
   title: 紫金山秋游
   date: 2017-09-01
@@ -11,8 +12,56 @@
 - img: 3.jpg
   title: 16秋见面会  
   date: 2017-09-01
-  color: 7e57c2 
+  color: 7e57c2
 - img: 4.jpg
   title: 技术分享  
   date: 2017-09-01
   color: 03a9f4
+- img: 7.jpg
+  title: 破冰活动-仙林
+  date: 2018-09-01
+  color: fffd94
+- img: 8.jpg
+  title: 破冰活动-仙林
+  date: 2018-09-01
+  color: fffd94
+- img: 9.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 10.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 11.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 12.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 13.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 14.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 15.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 16.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 17.jpg
+  title: 破冰活动-鼓楼
+  date: 2018-09-01
+  color: a8c4dd
+- img: 18.jpg
+  title: 一群认认真真的虾
+  date: 2018-09-01
+  color: 79ec85
