@@ -1,6 +1,8 @@
 # 212121 1976d2 7e57c2 006064
 # 9e9d24 bf360c 00897b 03a9f4
 # 008f29
+# 咳，有妹子的我都标了ff0066（粉色）
+
 - img: 1.jpg
   title: 紫金山秋游
   date: 2017-09-01
@@ -68,4 +70,20 @@
 - img: 20.jpg
   title: 妹子也能修电脑
   date: 2019-05-04
+  color: ff0066
+- img: 21.jpg
+  title: IT活动周-展台维修-鼓楼
+  date: 2018-05-01
+  color: 00897b
+- img: 22.jpg
+  title: 工作室值班-仙林
+  date: 2018-11-09
+  color: 9e9d24
+- img: 23.jpg
+  title: IT活动周-展台维修-仙林
+  date: 2019-04-14
+  color: ff0066
+- img: 24.jpg
+  title: IT活动周-邀请工程师-仙林
+  date: 2018-04-14
   color: ff0066
