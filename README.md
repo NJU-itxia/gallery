@@ -15,6 +15,8 @@ gem install jekyll-seo-tag
 
 ## 图库更新指南
 
-1. **预处理**：建议图片压缩一下，**不要展示原图**:warning:，否则网页加载缓慢。
-2. clone到本地，然后在`images`文件夹内添加图片。
-3. 在`_data/photos.yml`文件内添加对应图片文件的描述、日期、主题色
+1. 在box的gallery资料库中添加图片，文件名格式为"标题_日期_分类.XXX"。
+2. 执行 `python build.py SEAFILE_TOKEN`。
+3. git追踪新增图片和`_data/photos.yml`，提交修改。
+
+建议在box里的图片做适当压缩。
