@@ -5,10 +5,23 @@ import sys
 from pathlib import Path
 from datetime import datetime
 
-if len(sys.argv) != 2:
-    raise ValueError('Usage: python build.py [SEAFILE_TOKEN]')
+if len(sys.argv) != 3:
+    raise ValueError('Usage: python build.py USERNAME PASSWORD')
 
-SEAFILE_TOKEN = sys.argv[1]
+USERNAME = sys.argv[1]
+PASSWORD = sys.argv[2]
+
+response = requests.post(
+    url='https://box.nju.edu.cn/api2/auth-token/',
+    data={
+        'username': USERNAME,
+        'password': PASSWORD,
+    },
+)
+if not response.ok:
+    raise RuntimeError(f"response code {response.status_code}")
+
+SEAFILE_TOKEN = json.loads(response.text)['token']
 CATEGORY_TO_COLOR = {
     'ITALK': '03a9f4',
     'DAILY': '9e9d24',
