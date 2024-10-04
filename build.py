@@ -4,6 +4,8 @@ import urllib.parse
 import sys
 from pathlib import Path
 from datetime import datetime
+from io import BytesIO
+from PIL import Image
 
 if len(sys.argv) != 3:
     raise ValueError('Usage: python build.py USERNAME PASSWORD')
@@ -47,12 +49,22 @@ def download_image(image_name, image_id):
     image_response = requests.get(url=response.text.strip('"'), headers=HEADERS)
     if not image_response.ok:
         raise RuntimeError(f"response code {response.status_code}")
-    image = image_response.content
+    image = Image.open(BytesIO(image_response.content))
+
+    # Resize
+    width, height = image.width, image.height
+    if width < height:
+        new_width = 1080
+        new_height = int(new_width * (height / width))
+    else:
+        new_height = 1080
+        new_width = int(new_height * (width / height))
+    print(image_id, new_width, new_height)
+    image = image.resize((new_width, new_height))
 
     suffix = Path(image_name).suffix
     file_name = f'{image_id}{suffix}'
-    with open(f'./images/{file_name}', 'wb') as file:
-        file.write(image)
+    image.save(f'./images/{file_name}', quality=80)
     return file_name
 
 if __name__ == '__main__':
